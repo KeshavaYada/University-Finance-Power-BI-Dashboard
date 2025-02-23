@@ -2,6 +2,16 @@
 
 ## 📌 Project Overview
 This **University Finance Dashboard** provides an interactive visualization of financial transactions, cash flow trends, and expenditure breakdown across different departments, programs, and funding sources. It enables university administrators and financial analysts to track **incoming receipts, outgoing payments**, and overall budget utilization efficiently.
+## 📷 Dashboard Overview
+
+### **1️⃣ Cash Flow Overview**
+![Dashboard Overview](https://github.com/KeshavaYada/University-Finance-Power-BI-Dashboard/blob/main/Cash%20flow%20overview.png)
+
+### **2️⃣ Detailed Cash Flow Insights**
+![Detailed Cash Flow](https://github.com/KeshavaYada/University-Finance-Power-BI-Dashboard/blob/main/Detailed%20Cash%20Flow.png)
+
+### **3️⃣ Cash Flow by Sources & Sponsors**
+![Sources and Sponsors](https://github.com/KeshavaYada/University-Finance-Power-BI-Dashboard/blob/main/Cashflow%20by%20Sources%20%26%20Sponsors.png)
 
 ## 📊 Key Features & Insights
 - **Cash Flow Overview**: Incoming and outgoing transactions categorized by different financial sub-systems.
@@ -39,33 +49,63 @@ The dataset consists of **financial transactions recorded over multiple fiscal y
 | **Outgoing Payments**  | Amount spent by the university |
 | **Incoming Receipts**  | Funds received from grants, sponsors, or tuition |
 
----
-
-## 📷 Dashboard Screenshots
-
-### **1️⃣ Cash Flow Overview**
-![Dashboard Overview](Images/dashboard_overview.png)
-
-### **2️⃣ Detailed Cash Flow Insights**
-![Detailed Cash Flow](Images/detailed_cash_flow.png)
-
-### **3️⃣ Cash Flow by Sources & Sponsors**
-![Sources and Sponsors](Images/cash_flow_sources.png)
 
 ---
 
-## 📊 **Key Business Insights from the Dashboard**
-- **Highest Transactions in AP Sub-System**: Most payments are processed through **Accounts Payable (AP)**.
-- **Research Funding Dominates**: The **"Individual or Project Research"** program accounts for **75.54% of outgoing payments** and **93.04% of incoming receipts**.
-- **Top Sponsor - NSF (National Science Foundation)**: NSF funds the highest portion of university projects (~ **0.72M**).
-- **Seasonal Trends in Cash Flow**: A **spike in payments occurs in August**, likely due to budget allocations before the new academic year.
-- **Vendor Performance Monitoring**: The **top 5 vendors by payments include Citrus North Hospitality LLC, Dell Marketing LP, and The Ohio State University**.
+## 🔍 Summary Insights
+- The **AP system** processes the highest number of transactions.
+- The **General Ledger (GL)** system handles the largest financial volume.
+- **Research Programs** receive the majority of funding and expenditures.
+- **National Science Foundation (NSF)** and **US Department of Defense** are key sponsors.
+- **Top departments, vendors, and spending patterns** are visualized for financial analysis.
+- **Fiscal trends** highlight peak spending and funding cycles.
 
+---
+
+## 🛠 Advanced Features Used in the Dashboard
+
+### **🎚 1. Dynamic Filters & Slicers**
+   - **Multi-Level Slicers**: Users can filter by **Sub-System Source, Department, Fiscal Quarter, Fund Description, Sponsor, and Vendor**.
+   - **Cascading Filters**: Filters dynamically update based on other selections, ensuring relevant data visualization.
+   - **Date Slicer (Fiscal Year & Quarter)**: Allows easy navigation between different financial periods.
+
+### **🎨 2. Dynamic Color Grading & Conditional Formatting**
+   - **Color-coded Financial Metrics**:
+     - Incoming Receipts vs. Outgoing Payments are **color-coded** for easy differentiation.
+     - High cash flow values are highlighted in **blue**, while lower values fade to **lighter shades**.
+   - **Heatmap-style Data Tables**:
+     - Program-level cash flow data is **color-graded dynamically**.
+     - **Higher expenditures are darker, while lower ones are lighter**, making key financial insights easily visible.
+
+### **📈 3. Trends with Drill-Down & Drill-Up Features**
+   - **Drill-Down for Fiscal Trends**:
+     - Users can **drill down from yearly trends to quarterly and monthly trends**.
+     - Clicking on a **fiscal year** in the cash flow trend chart **breaks down into quarters**.
+     - Further drill-down shows **month-over-month trends**.
+   - **Drill-Up for Aggregate Analysis**:
+     - Users can **move up from detailed month-level data to a yearly summary** for high-level analysis.
+
+
+### **🔄 4. Dynamic Titles & KPI Cards**
+   - **Auto-Updating Titles**: Dashboard titles **change dynamically** based on selected filters.
+   - **Dynamic KPI Cards**:
+     - Show **total incoming receipts and outgoing payments**.
+     - **Real-time updates** based on selected fiscal periods.
+   - **Adaptive Labeling**:
+     - If a type of cash is selected, the title updates to reflect its **specific financial summary**.
+
+
+### **🔄 6. Interactivity & Drill-Throughs**
+   - **Drill-Through Pages**:
+     - Clicking on a **department, fund, or vendor** provides **detailed insights**.
+   - **Interactive Pie & Bar Charts**:
+     - Clicking a segment of a **departmental spending chart filters all visuals** dynamically.
+    
 ---
 
 ## 🔍 **How to Use This Project**
 1. **Download the `.pbix` file** and open it in Power BI Desktop.
-2. Connect your dataset (`university_finance_data.csv`) if available.
+2. Connect  to dataset (`Comprehensive Finance data.xlsx`).
 3. Explore **interactive filters** to analyze specific departments, sponsors, and financial years.
 4. Modify **Power Query transformations** or **DAX measures** as needed.
 
